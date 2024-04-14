@@ -10,10 +10,10 @@ public class Factors_count {
 	    	//  System.out.println("For loop : "+ i);
 	          if (N % i == 0) {
 	                  count++;
-	               //   System.out.println("first: "+ count);
+	                // System.out.println("first: "+ count);
 	                  if (N / i != i) {
 	                      count++;
-	                     // System.out.println("Second: "+ count);
+	                    //  System.out.println("Second: "+ count);
 	                  }
 	              }
 
