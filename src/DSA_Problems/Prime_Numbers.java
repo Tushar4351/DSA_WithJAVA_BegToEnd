@@ -12,7 +12,8 @@ public class Prime_Numbers {
                   System.out.println("first: "+ count);
                   if (N / i != i) {
                       count++;
-                      System.out.println("Second: "+ count);
+                   //   System.out.print(i+" " + N/i + " " );
+                     // System.out.println("Second: "+ count);
                   }
               }
 
