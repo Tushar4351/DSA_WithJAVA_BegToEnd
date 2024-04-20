@@ -3,19 +3,24 @@ import java.util.Scanner;
 public class FirstNonRepeatingNumber {
 	public static int findFirstNonRepeatingNumber(int arr[],int n) {
 		
-        for (int i = 1; i <= n; i++) {
-            int count = 0;
-            for (int j = 0; j < n; j++) {
-                if (arr[j] == i) {
-                    count++;
-                }
-            }
-            if (count == 1) {
-                return i;
-            }
-        }
-        return -1; // No non-repeating number found
-    }
+	        //worst case TC-> O(nums.length) For Positive Integers
+	        for (int i = 0; i < n; i++) {
+	            int count = 0;
+	            for (int j = 0; j < n; j++) {
+	                if (i != j && arr[j] == arr[i]) {
+	                    count++;
+	                }
+	            }
+	            if (count == 0) {
+	                return arr[i];
+	            }
+	        }
+	        
+	        // If no non-repeating integer is found, return 0
+	        return 0;
+
+	     
+	    }
 	public static void main(String[] args) {
 		Scanner sc=new Scanner (System.in);
 		
