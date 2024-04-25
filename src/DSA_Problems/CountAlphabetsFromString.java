@@ -4,12 +4,18 @@ import java.util.Scanner;
 
 public class CountAlphabetsFromString {
 	public static void Count(String S)
+    
     {
         int n=S.length();
+        int count=0;
         for(int i=0;i<n ;i++){
             char ch=S.charAt(i);
-            System.out.println(ch);
+            if ( (ch >= 'a' && ch <= 'z') ||  
+                (ch >= 'A' && ch <= 'Z') ){
+                    count++;
+                }
         }
+        System.out.println("Enetr the Sentence : "+count);
     }
 
 	public static void main(String[] args) {
